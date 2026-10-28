@@ -1,106 +1,891 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
-  <!-- Basic -->
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Master the Market – Beginner's Guide</title>
-  <meta name="description" content="100% free stock market education. Learn chart reading, technical analysis, and risk management. No buy/sell tips. For learning purpose only.">
-  <link rel="canonical" href="https://example.com/">
-
-  <!-- Performance -->
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>SUDHIR SHARMA | NSE & F&O Technical Analyst & Trading Mentor</title>
+  
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <!-- Google Fonts: Syne & Plus Jakarta Sans for luxury fintech look -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800;900&family=Syne:wght@700;800&display=swap" rel="stylesheet">
+  
+  <!-- FontAwesome 6 Pro-style icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
-  <!-- Favicons (optional) -->
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📊</text></svg>">
-
-  <!-- Open Graph -->
-  <meta property="og:title" content="Master the Market – Beginner's Guide">
-  <meta property="og:description" content="Learn charts & risk management. No buy/sell tips. 100% educational.">
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://example.com/">
-  <meta property="og:image" content="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=1600&auto=format&fit=crop">
-
-  <!-- Minimal CSS (inline for speed) -->
-  <style>
-    :root{
-      --bg1:#0c0c1d;
-      --bg2:#1a1a2b;
-      --brand: #00ff99;
-      --brand-2:#00f0ff;
-      --text:#ffffff;
-      --muted:#b5b5c3;
-    }
-    *{box-sizing:border-box}
-    html,body{margin:0;padding:0}
-    body{
-      font-family: 'Inter', system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
-      color:var(--text);
-      background:
-        linear-gradient(135deg, rgba(0,0,0,.45), rgba(0,0,0,.45)),
-        url('https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=1600&auto=format&fit=crop') no-repeat center/cover fixed;
-      -webkit-font-smoothing:antialiased; -moz-osx-font-smoothing:grayscale;
-      min-height:100vh;
-    }
-    .container{
-      max-width:520px; margin:0 auto; padding:24px 18px; text-align:center; min-height:100vh; display:flex; flex-direction:column; justify-content:center;
-      backdrop-filter: saturate(130%);
-    }
-    .badge{display:inline-block; font-size:.78rem; padding:6px 10px; border:1px solid #2a2a3a; border-radius:999px; color:#d6eaff; background:rgba(0,240,255,.08); margin-bottom:14px}
-    h1{font-size:1.9rem; line-height:1.2; margin:6px 0 10px; background:linear-gradient(90deg,var(--brand-2),var(--brand)); -webkit-background-clip:text; background-clip:text; color:transparent;}
-    .sub{font-size:1rem; color:var(--muted); margin:0 auto 16px; max-width:36ch}
-    .pill{
-      display:inline-flex; align-items:center; gap:8px; padding:8px 12px; border-radius:999px; background:rgba(0,255,153,.07); border:1px dashed rgba(0,255,153,.35); color:#d8ffe9; font-size:.9rem; margin:6px 0 18px;
-    }
-    ul.bullets{list-style:none; padding:0; margin:0 0 18px}
-    ul.bullets li{margin:8px 0; color:#e9eef9}
-    .cta{
-      display:inline-block; text-decoration:none; background:var(--brand); color:#041b14; padding:14px 18px; font-weight:700; border-radius:12px; box-shadow:0 0 0 0 rgba(0,255,153,.6); transform:translateZ(0);
-      transition:transform .15s ease;
-      animation:pulse 1.6s infinite;
-    }
-    .cta:active{transform:scale(.98)}
-    @keyframes pulse{
-      0%{box-shadow:0 0 0 0 rgba(0,255,153,.55)}
-      70%{box-shadow:0 0 0 20px rgba(0,255,153,0)}
-      100%{box-shadow:0 0 0 0 rgba(0,255,153,0)}
-    }
-    .fineprint{font-size:.86rem; color:var(--muted); margin:18px auto 0; max-width:44ch}
-    .disclaimer{font-size:.78rem; color:#9aa4b2; margin:18px auto 0; max-width:50ch}
-    .safe{display:flex; align-items:center; justify-content:center; gap:8px; margin-top:14px; color:#a1ffd6; font-size:.9rem}
-    .shield{width:18px; height:18px; display:inline-block; border-radius:4px; background:linear-gradient(135deg,#0df,#0f9)}
-    footer{opacity:.8; margin-top:22px; font-size:.78rem; color:#9aa4b2}
-  </style>
-</head>
-<body>
-  <main class="container">
-    <span class="badge">100% Educational • Policy Safe</span>
-    <h1>Master the Market – Beginner's Guide</h1>
-    <p class="sub">No tips, just education for beginners</p>
-
-    <div class="pill">🚫 No Buy/Sell Tips • ✅ For Learning Purpose Only</div>
-
-    <ul class="bullets" aria-label="What you'll learn">
-      <li>• Chart basics & risk rules (no return promises)</li>
-      <li>• How to read trends without speculation</li>
-      <li>• Market discipline & common mistakes</li>
-    </ul>
-
-    <!-- CTA goes to a page-specific bridge -->
-    <a class="cta" href="bridge-lp30.html" rel="nofollow">Start Learning</a>
-
-    <div class="safe"><span class="shield" aria-hidden="true"></span> Ad Policy Friendly Content</div>
-
-    <p class="fineprint">We focus on concepts & frameworks suitable for beginners.</p>
-    <p class="disclaimer"><em>This website is for educational purposes only. We do not provide investment, trading, or financial advice.</em></p>
-
-    <footer>© <span id="y"></span> Market Basics Learning Hub</footer>
-  </main>
+  <!-- Meta Pixel Code -->
+  <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '1058103490603245');
+    fbq('track', 'PageView');
+  </script>
+  <noscript>
+    <img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=1058103490603245&ev=PageView&noscript=1" alt="fb-pixel"/>
+  </noscript>
+  <!-- End Meta Pixel Code -->
 
   <script>
-    document.getElementById('y').textContent = new Date().getFullYear();
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+            display: ['"Syne"', 'sans-serif'],
+          },
+          colors: {
+            brand: {
+              gold: '#E5A93B',
+              goldLight: '#FBE49B',
+              goldDark: '#9F6E17',
+              darkBg: '#060B11',
+              cardBg: 'rgba(12, 22, 35, 0.72)',
+              cyanGlow: '#00D2FF',
+              emerald: '#10B981',
+            }
+          },
+          animation: {
+            'shimmer': 'shimmer 2.2s infinite',
+            'pulse-glow': 'pulseGlow 2.5s infinite ease-in-out',
+            'float': 'float 4s ease-in-out infinite',
+            'marquee': 'marquee 25s linear infinite',
+          },
+          keyframes: {
+            shimmer: {
+              '100%': { transform: 'translateX(100%)' }
+            },
+            pulseGlow: {
+              '0%, 100%': { 
+                boxShadow: '0 0 25px -4px rgba(229, 169, 59, 0.45), 0 0 10px 0px rgba(0, 210, 255, 0.2)' 
+              },
+              '50%': { 
+                boxShadow: '0 0 45px 5px rgba(229, 169, 59, 0.75), 0 0 20px 2px rgba(0, 210, 255, 0.45)' 
+              }
+            },
+            float: {
+              '0%, 100%': { transform: 'translateY(0px)' },
+              '50%': { transform: 'translateY(-6px)' }
+            },
+            marquee: {
+              '0%': { transform: 'translateX(0%)' },
+              '100%': { transform: 'translateX(-50%)' }
+            }
+          }
+        }
+      }
+    }
   </script>
+
+  <style>
+    /* Custom Styling for High End Mobile Trading App Feel */
+    body {
+      background-color: #060B11;
+      color: #E2E8F0;
+      overflow-x: hidden;
+      -webkit-font-smoothing: antialiased;
+      -webkit-tap-highlight-color: transparent;
+      user-select: none;
+    }
+
+    /* Radial ambient backgrounds */
+    .hero-glow {
+      background: radial-gradient(circle at 50% 15%, rgba(229, 169, 59, 0.16) 0%, rgba(6, 11, 17, 0) 65%);
+    }
+
+    /* Glassmorphism Card Style */
+    .glass-card {
+      background: rgba(14, 25, 40, 0.65);
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
+      border: 1px solid rgba(245, 194, 91, 0.16);
+      box-shadow: 0 12px 30px -10px rgba(0, 0, 0, 0.75);
+    }
+
+    .glass-pill {
+      background: rgba(255, 255, 255, 0.05);
+      backdrop-filter: blur(10px);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+    }
+
+    /* Metallic Gold Text Gradient */
+    .gold-gradient-text {
+      background: linear-gradient(135deg, #FFF4D0 0%, #E5A93B 45%, #FFDF88 75%, #B47C1E 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    /* Metallic Border Gradient */
+    .gold-border-glow {
+      position: relative;
+    }
+    .gold-border-glow::before {
+      content: '';
+      position: absolute;
+      inset: -1px;
+      border-radius: inherit;
+      padding: 1px;
+      background: linear-gradient(135deg, rgba(255, 225, 140, 0.6), rgba(229, 169, 59, 0.1), rgba(0, 210, 255, 0.35));
+      -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+      -webkit-mask-composite: xor;
+      mask-composite: exclude;
+      pointer-events: none;
+    }
+
+    /* Shimmer light beam */
+    .btn-shimmer::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.35), transparent);
+      transform: translateX(-100%);
+      animation: shimmer 2.4s infinite cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    /* Fixed Sticky Button Container Guard (Prevents mobile browser UI clipping) */
+    .fixed-sticky-bar {
+      position: fixed !important;
+      bottom: 0 !important;
+      left: 0 !important;
+      right: 0 !important;
+      z-index: 45 !important;
+      transform: translateZ(0);
+      -webkit-transform: translateZ(0);
+      will-change: transform;
+    }
+
+    /* Custom Scrollbar for Modal */
+    ::-webkit-scrollbar {
+      width: 4px;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: rgba(229, 169, 59, 0.3);
+      border-radius: 4px;
+    }
+  </style>
+</head>
+<body class="min-h-screen relative flex flex-col justify-between selection:bg-brand-gold selection:text-black">
+
+  <!-- Interactive Canvas: Floating Bullish Candlesticks & Light Specks -->
+  <canvas id="ambient-canvas" class="fixed inset-0 pointer-events-none z-0 opacity-40"></canvas>
+
+  <!-- Ambient Light Gradients -->
+  <div class="fixed top-0 left-1/2 -translate-x-1/2 w-[450px] h-[350px] hero-glow pointer-events-none z-0"></div>
+  <div class="fixed bottom-0 right-0 w-[280px] h-[280px] bg-gradient-to-tl from-cyan-500/10 to-transparent blur-3xl pointer-events-none z-0"></div>
+
+  <!-- Live Market Ticker Ribbon (BankNifty, Nifty50, Sensex) -->
+  <header class="w-full relative z-20 border-b border-amber-500/15 bg-[#05090f]/90 backdrop-blur-md overflow-hidden py-1.5">
+    <div class="flex items-center text-[11px] font-semibold tracking-wide whitespace-nowrap animate-marquee">
+      <!-- Item 1 -->
+      <span class="inline-flex items-center mx-4 text-slate-300">
+        <span class="w-1.5 h-1.5 rounded-full bg-emerald-400 mr-1.5 animate-ping"></span>
+        <strong class="text-white mr-1.5 font-bold">NIFTY 50</strong> 
+        <span id="ticker-nifty" class="text-emerald-400 font-mono">24,860.50 (+0.92%)</span>
+      </span>
+      <span class="text-amber-500/40">◆</span>
+
+      <!-- Item 2 -->
+      <span class="inline-flex items-center mx-4 text-slate-300">
+        <strong class="text-white mr-1.5 font-bold">BANKNIFTY</strong> 
+        <span id="ticker-banknifty" class="text-emerald-400 font-mono">52,430.15 (+1.18%)</span>
+      </span>
+      <span class="text-amber-500/40">◆</span>
+
+      <!-- Item 3 -->
+      <span class="inline-flex items-center mx-4 text-slate-300">
+        <strong class="text-white mr-1.5 font-bold">INDIA VIX</strong> 
+        <span class="text-cyan-400 font-mono">12.84 (-3.10%)</span>
+      </span>
+      <span class="text-amber-500/40">◆</span>
+
+      <!-- Item 4 (Repeated for infinite marquee effect) -->
+      <span class="inline-flex items-center mx-4 text-slate-300">
+        <span class="w-1.5 h-1.5 rounded-full bg-emerald-400 mr-1.5"></span>
+        <strong class="text-white mr-1.5 font-bold">NIFTY 50</strong> 
+        <span class="text-emerald-400 font-mono">24,860.50 (+0.92%)</span>
+      </span>
+      <span class="text-amber-500/40">◆</span>
+
+      <span class="inline-flex items-center mx-4 text-slate-300">
+        <strong class="text-white mr-1.5 font-bold">BANKNIFTY</strong> 
+        <span class="text-emerald-400 font-mono">52,430.15 (+1.18%)</span>
+      </span>
+      <span class="text-amber-500/40">◆</span>
+
+      <span class="inline-flex items-center mx-4 text-slate-300">
+        <strong class="text-white mr-1.5 font-bold">FINNIFTY</strong> 
+        <span class="text-emerald-400 font-mono">23,910.40 (+0.78%)</span>
+      </span>
+    </div>
+  </header>
+
+  <!-- Live Join Toast (Floating Social Proof Notification) -->
+  <div id="live-toast" class="fixed top-12 left-1/2 -translate-x-1/2 z-40 transition-all duration-500 transform -translate-y-12 opacity-0 pointer-events-none w-[90%] max-w-[340px]">
+    <div class="glass-card px-3.5 py-2.5 rounded-xl border border-amber-400/30 flex items-center space-x-3 shadow-2xl">
+      <div class="relative w-8 h-8 rounded-full bg-gradient-to-tr from-amber-500 to-amber-200 p-[1px] flex-shrink-0">
+        <div class="w-full h-full bg-[#0d1825] rounded-full flex items-center justify-center text-amber-300 text-xs">
+          <i class="fa-solid fa-bolt"></i>
+        </div>
+        <span class="absolute -bottom-0.5 -right-0.5 w-2.5 h-2.5 rounded-full bg-emerald-500 border border-[#060B11]"></span>
+      </div>
+      <div class="flex-1 text-left leading-tight">
+        <p class="text-xs font-semibold text-white tracking-tight" id="toast-name">Praveen from Delhi</p>
+        <p class="text-[10px] text-amber-300/80 font-medium">Joined VIP Community 4s ago</p>
+      </div>
+      <span class="text-[9px] px-2 py-0.5 rounded-full bg-emerald-500/20 text-emerald-400 border border-emerald-500/30 font-bold uppercase tracking-wider">Free</span>
+    </div>
+  </div>
+
+  <!-- Main Mobile Hero Container -->
+  <main class="w-full max-w-[430px] mx-auto flex flex-col items-center px-4 pt-4 pb-[calc(7.5rem+env(safe-area-inset-bottom,20px))] relative z-10">
+
+    <!-- Top Badge -->
+    <div class="animate-float mb-3">
+      <div class="glass-pill px-3.5 py-1.2 rounded-full inline-flex items-center space-x-2 border border-amber-400/30 shadow-[0_0_15px_rgba(229,169,59,0.2)]">
+        <span class="flex h-2 w-2 relative">
+          <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-amber-400 opacity-75"></span>
+          <span class="relative inline-flex rounded-full h-2 w-2 bg-amber-500"></span>
+        </span>
+        <span class="text-[11px] font-bold tracking-wider uppercase text-amber-200">
+          INDIA'S PREMIER TRADERS COMMUNITY
+        </span>
+      </div>
+    </div>
+
+    <!-- Glowing Brand Avatar / Logo Badge -->
+    <div class="relative mt-2 mb-4 group cursor-pointer">
+      <div class="absolute -inset-2 bg-gradient-to-r from-amber-500 via-yellow-300 to-amber-600 rounded-full blur-xl opacity-60 group-hover:opacity-100 transition duration-700 animate-pulse"></div>
+      
+      <div class="relative w-28 h-28 rounded-full p-[2.5px] bg-gradient-to-b from-yellow-200 via-amber-500 to-amber-900 shadow-2xl">
+        <div class="w-full h-full rounded-full bg-[#0a1420] overflow-hidden flex items-center justify-center p-1.5">
+          <img 
+            id="brand-logo"
+            src="ZtoH.jpeg" 
+            alt="Sudhir Sharma Trading Mentor Logo" 
+            class="w-full h-full object-cover rounded-full transition-transform duration-500 group-hover:scale-105"
+            onerror="this.onerror=null; this.src='https://placehold.co/200x200/08121e/f5c25b?text=SUDHIR+SHARMA';"
+          />
+        </div>
+      </div>
+
+      <!-- Verified Badge -->
+      <div class="absolute -bottom-1 right-1 w-7 h-7 rounded-full bg-gradient-to-tr from-amber-500 to-yellow-200 p-[1px] shadow-lg flex items-center justify-center">
+        <div class="w-full h-full bg-[#091522] rounded-full flex items-center justify-center text-amber-300 text-xs font-black">
+          <i class="fa-solid fa-check"></i>
+        </div>
+      </div>
+    </div>
+
+    <!-- Headline with Gold Chrome Effect -->
+    <h1 class="text-center font-display font-black text-[28px] sm:text-[32px] leading-[1.15] tracking-tight uppercase gold-gradient-text mt-1 drop-shadow-sm">
+      SUDHIR SHARMA
+    </h1>
+    <p class="text-amber-300/90 text-xs font-bold uppercase tracking-wider text-center mt-0.5">
+      NSE & F&O Technical Analyst | Stock Market Mentor
+    </p>
+
+    <p class="text-slate-400 text-xs sm:text-[13px] text-center mt-2 max-w-[320px] font-medium leading-relaxed">
+      Learn High-Probability Price Action, BankNifty Options & Disciplined Risk Management with Daily Live Setups.
+    </p>
+
+    <!-- Key Stats Counter Pills -->
+    <div class="grid grid-cols-3 gap-2 w-full mt-5 px-1">
+      <div class="glass-card py-2 px-1 rounded-xl text-center border-amber-400/20">
+        <span class="block text-base font-extrabold text-white font-display">18,036</span>
+        <span class="text-[10px] text-amber-300/80 font-medium">Subscribers</span>
+      </div>
+      <div class="glass-card py-2 px-1 rounded-xl text-center border-amber-400/20">
+        <span class="block text-base font-extrabold text-emerald-400 font-display">91.4%</span>
+        <span class="text-[10px] text-slate-400 font-medium">Accuracy*</span>
+      </div>
+      <div class="glass-card py-2 px-1 rounded-xl text-center border-amber-400/20">
+        <span class="block text-base font-extrabold text-white font-display">1 : 2.5</span>
+        <span class="text-[10px] text-amber-300/80 font-medium">Avg. Risk:Reward</span>
+      </div>
+    </div>
+
+    <!-- Core Value Cards -->
+    <section class="w-full mt-6 space-y-3" aria-label="Key Offerings">
+      
+      <!-- Feature Card 1 -->
+      <div class="glass-card p-3.5 rounded-2xl flex items-center justify-between border-amber-500/20 hover:border-amber-400/40 transition duration-300 active:scale-[0.99] group">
+        <div class="flex items-center space-x-3.5">
+          <div class="w-12 h-12 rounded-xl bg-gradient-to-br from-amber-500/20 via-amber-500/10 to-transparent border border-amber-400/30 flex items-center justify-center text-amber-400 text-lg group-hover:scale-105 transition-transform flex-shrink-0 shadow-[0_0_15px_rgba(229,169,59,0.15)]">
+            <i class="fa-solid fa-chart-candlestick"></i>
+          </div>
+          <div>
+            <h3 class="text-sm font-bold text-white tracking-tight group-hover:text-amber-200 transition">Daily Intraday Setups</h3>
+            <p class="text-[11px] text-slate-400 font-medium">Nifty & BankNifty live market institutional levels</p>
+          </div>
+        </div>
+        <span class="text-amber-400/60 text-xs pl-2"><i class="fa-solid fa-chevron-right text-[10px]"></i></span>
+      </div>
+
+      <!-- Feature Card 2 -->
+      <div class="glass-card p-3.5 rounded-2xl flex items-center justify-between border-amber-500/20 hover:border-amber-400/40 transition duration-300 active:scale-[0.99] group">
+        <div class="flex items-center space-x-3.5">
+          <div class="w-12 h-12 rounded-xl bg-gradient-to-br from-cyan-500/20 via-cyan-500/10 to-transparent border border-cyan-400/30 flex items-center justify-center text-cyan-400 text-lg group-hover:scale-105 transition-transform flex-shrink-0 shadow-[0_0_15px_rgba(0,210,255,0.15)]">
+            <i class="fa-solid fa-arrow-trend-up"></i>
+          </div>
+          <div>
+            <h3 class="text-sm font-bold text-white tracking-tight group-hover:text-cyan-200 transition">High Momentum Swing Ideas</h3>
+            <p class="text-[11px] text-slate-400 font-medium">Breakout & retest setups for 2-10 days horizon</p>
+          </div>
+        </div>
+        <span class="text-cyan-400/60 text-xs pl-2"><i class="fa-solid fa-chevron-right text-[10px]"></i></span>
+      </div>
+
+      <!-- Feature Card 3 -->
+      <div class="glass-card p-3.5 rounded-2xl flex items-center justify-between border-amber-500/20 hover:border-amber-400/40 transition duration-300 active:scale-[0.99] group">
+        <div class="flex items-center space-x-3.5">
+          <div class="w-12 h-12 rounded-xl bg-gradient-to-br from-emerald-500/20 via-emerald-500/10 to-transparent border border-emerald-400/30 flex items-center justify-center text-emerald-400 text-lg group-hover:scale-105 transition-transform flex-shrink-0 shadow-[0_0_15px_rgba(16,185,129,0.15)]">
+            <i class="fa-solid fa-bullseye"></i>
+          </div>
+          <div>
+            <h3 class="text-sm font-bold text-white tracking-tight group-hover:text-emerald-200 transition">Precise Entry, SL & Targets</h3>
+            <p class="text-[11px] text-slate-400 font-medium">Zero ambiguity charts with exact trigger zones</p>
+          </div>
+        </div>
+        <span class="text-emerald-400/60 text-xs pl-2"><i class="fa-solid fa-chevron-right text-[10px]"></i></span>
+      </div>
+
+      <!-- Feature Card 4 -->
+      <div class="glass-card p-3.5 rounded-2xl flex items-center justify-between border-amber-500/20 hover:border-amber-400/40 transition duration-300 active:scale-[0.99] group">
+        <div class="flex items-center space-x-3.5">
+          <div class="w-12 h-12 rounded-xl bg-gradient-to-br from-purple-500/20 via-purple-500/10 to-transparent border border-purple-400/30 flex items-center justify-center text-purple-300 text-lg group-hover:scale-105 transition-transform flex-shrink-0 shadow-[0_0_15px_rgba(168,85,247,0.15)]">
+            <i class="fa-solid fa-shield-halved"></i>
+          </div>
+          <div>
+            <h3 class="text-sm font-bold text-white tracking-tight group-hover:text-purple-200 transition">Strict Capital Protection Rule</h3>
+            <p class="text-[11px] text-slate-400 font-medium">Risk maximum 1.5% capital per trade execution</p>
+          </div>
+        </div>
+        <span class="text-purple-400/60 text-xs pl-2"><i class="fa-solid fa-chevron-right text-[10px]"></i></span>
+      </div>
+
+    </section>
+
+    <!-- Urgency Countdown & Free Spot Counter Bar -->
+    <div class="w-full mt-6 glass-card p-4 rounded-2xl border-amber-500/30">
+      
+      <div class="flex items-center justify-between text-xs mb-2.5">
+        <span class="text-amber-300 font-semibold flex items-center">
+          <i class="fa-solid fa-fire text-amber-500 mr-1.5 animate-bounce"></i> Limited Free Access Closes:
+        </span>
+        <div class="flex items-center space-x-1 font-mono font-bold text-sm text-white bg-black/40 px-2 py-0.5 rounded-md border border-amber-500/20" id="countdown-timer">
+          <span id="timer-min">00</span>:<span id="timer-sec">49</span>
+        </div>
+      </div>
+
+      <!-- Custom Animated Progress Track -->
+      <div class="relative w-full h-3 bg-slate-800/90 rounded-full overflow-hidden p-[2px]">
+        <div id="progress-fill" class="h-full bg-gradient-to-r from-amber-600 via-amber-400 to-yellow-300 rounded-full transition-all duration-1000 relative" style="width: 82%;">
+          <div class="absolute inset-0 bg-white/20 animate-pulse"></div>
+        </div>
+      </div>
+
+      <div class="flex items-center justify-between text-[11px] mt-2 font-medium">
+        <span class="text-slate-400">Claimed: <strong class="text-white" id="spots-claimed">94%</strong></span>
+        <span class="text-amber-400 font-bold">Only <span id="spots-left" class="underline underline-offset-2">7</span> Free VIP Passes Left!</span>
+      </div>
+    </div>
+
+    <!-- Main High-Converting Pulse CTA Button -->
+    <div class="w-full mt-5 px-1">
+      <a 
+        id="telegram-cta-button"
+        href="https://t.me/+IAJGP1Y3EUsxODM9" 
+        target="_blank" 
+        rel="noopener noreferrer"
+        onclick="handleCtaClick(event)"
+        class="relative overflow-hidden group w-full py-4 px-6 rounded-2xl flex items-center justify-center font-extrabold text-base sm:text-lg text-[#060b11] transition-all transform active:scale-95 duration-200 animate-pulse-glow btn-shimmer"
+        style="background: linear-gradient(135deg, #FFE79A 0%, #E5A93B 50%, #C48B28 100%);"
+      >
+        <!-- Icon Badge -->
+        <span class="w-8 h-8 rounded-full bg-[#060b11] text-amber-300 flex items-center justify-center mr-3 shadow-md group-hover:scale-110 transition-transform">
+          <i class="fa-brands fa-telegram text-base"></i>
+        </span>
+
+        <span class="tracking-wide uppercase font-black drop-shadow-sm">
+          JOIN FREE TELEGRAM CHANNEL
+        </span>
+      </a>
+
+      <!-- Instant Join Subtext -->
+      <div class="flex items-center justify-center space-x-2 text-[11px] text-slate-400 mt-2.5">
+        <i class="fa-solid fa-lock text-amber-500 text-[10px]"></i>
+        <span>100% Free Entry • Instant VIP Channel Access</span>
+      </div>
+    </div>
+
+    <!-- Trust Badges Row -->
+    <div class="flex items-center justify-center gap-6 mt-6 py-2 w-full border-y border-white/5 text-[11px] font-semibold text-slate-400">
+      <span class="flex items-center gap-1.5"><i class="fa-solid fa-shield-check text-emerald-400"></i> Pure Price Action</span>
+      <span class="flex items-center gap-1.5"><i class="fa-solid fa-users text-amber-400"></i> 18,036 Active</span>
+      <span class="flex items-center gap-1.5"><i class="fa-solid fa-chart-line text-cyan-400"></i> Daily Review</span>
+    </div>
+
+    <!-- Risk & Regulatory Disclaimer (Prominent & Compliant) -->
+    <div class="mt-6 px-3 py-3 rounded-xl bg-amber-500/5 border border-amber-500/10 text-center">
+      <p class="text-[11px] leading-relaxed text-slate-400 font-normal">
+        <strong class="text-amber-300/90 font-semibold uppercase tracking-wider block mb-1">
+          <i class="fa-solid fa-triangle-exclamation mr-1"></i> Regulatory Notice & Risk Disclaimer
+        </strong>
+        Securities & Options trading involve substantial financial risks of loss and are not suitable for every investor. Past performance is no guarantee of future returns. Content shared is strictly for educational and training purposes.
+      </p>
+    </div>
+
+    <!-- Interactive Navigation Modals -->
+    <nav class="mt-6 w-full flex flex-wrap justify-center items-center gap-x-4 gap-y-2 text-xs font-semibold text-slate-400" aria-label="Legal & Support Navigation">
+      <button onclick="openModal('terms')" class="hover:text-amber-400 transition py-1">Terms & Conditions</button>
+      <span class="text-slate-700">•</span>
+      <button onclick="openModal('disclaimer')" class="hover:text-amber-400 transition py-1 text-amber-300/80">SEBI Disclaimer</button>
+      <span class="text-slate-700">•</span>
+      <button onclick="openModal('about')" class="hover:text-amber-400 transition py-1">About Sudhir Sharma</button>
+      <span class="text-slate-700">•</span>
+      <button onclick="openModal('contact')" class="hover:text-amber-400 transition py-1">Contact Support</button>
+    </nav>
+
+    <footer class="mt-5 text-center">
+      <p class="text-[10px] text-slate-500">
+        &copy; <span id="current-year"></span> Sudhir Sharma Trading. All rights reserved.
+      </p>
+    </footer>
+
+  </main>
+
+  <!-- ================= FIXED STICKY BOTTOM CTA BAR (NEVER MOVES OR GETS COVERED) ================= -->
+  <aside class="fixed-sticky-bar bg-[#060b11]/98 backdrop-blur-2xl border-t border-amber-500/40 px-3.5 pt-2.5 pb-[max(0.75rem,calc(env(safe-area-inset-bottom,12px)+6px))] shadow-[0_-12px_40px_rgba(0,0,0,0.95)]">
+    <div class="max-w-[430px] mx-auto flex items-center justify-between gap-3">
+      
+      <!-- Left info snippet -->
+      <div class="flex flex-col justify-center leading-tight flex-shrink-0">
+        <div class="flex items-center space-x-1.5">
+          <span class="w-2 h-2 rounded-full bg-emerald-400 animate-ping"></span>
+          <span class="text-[10px] font-black uppercase tracking-wider text-amber-300">Live Free Access</span>
+        </div>
+        <span class="text-[11px] font-semibold text-slate-300 mt-0.5">
+          Only <strong class="text-white font-bold" id="sticky-spots-left">7 spots</strong> left!
+        </span>
+      </div>
+
+      <!-- Right Action Button -->
+      <a 
+        href="https://t.me/+IAJGP1Y3EUsxODM9" 
+        target="_blank" 
+        rel="noopener noreferrer"
+        onclick="handleCtaClick(event)"
+        class="relative overflow-hidden group flex-1 py-3.5 px-4 rounded-xl flex items-center justify-center font-extrabold text-xs sm:text-sm text-[#060b11] transition-all transform active:scale-95 duration-200 animate-pulse-glow btn-shimmer shadow-xl"
+        style="background: linear-gradient(135deg, #FFE79A 0%, #E5A93B 50%, #C48B28 100%);"
+        aria-label="Join Sudhir Sharma Telegram Channel"
+      >
+        <span class="w-6 h-6 rounded-full bg-[#060b11] text-amber-300 flex items-center justify-center mr-2 shadow-sm group-hover:scale-110 transition-transform flex-shrink-0">
+          <i class="fa-brands fa-telegram text-xs"></i>
+        </span>
+        <span class="tracking-wide uppercase font-black whitespace-nowrap">
+          JOIN TELEGRAM FREE
+        </span>
+      </a>
+
+    </div>
+  </aside>
+
+  <!-- ================= POPUP / BOTTOM SHEET MODAL ================= -->
+  <div 
+    id="modal-backdrop" 
+    class="fixed inset-0 z-[60] flex items-end sm:items-center justify-center bg-black/85 backdrop-blur-md opacity-0 pointer-events-none transition-opacity duration-300 px-0 sm:px-4"
+    aria-hidden="true"
+    role="dialog"
+  >
+    <!-- Modal Card Box (Slide-up on mobile) -->
+    <div 
+      id="modal-panel" 
+      class="bg-[#0b1420] border-t sm:border border-amber-500/30 w-full max-w-lg rounded-t-3xl sm:rounded-2xl p-6 shadow-2xl max-h-[85vh] overflow-y-auto transform translate-y-full sm:translate-y-4 transition-transform duration-300 relative text-left"
+    >
+      <!-- Top Mobile Swipe Bar -->
+      <div class="w-12 h-1 bg-slate-700 rounded-full mx-auto -mt-2 mb-4 sm:hidden"></div>
+
+      <!-- Close Button -->
+      <button 
+        onclick="closeModal()" 
+        class="absolute top-5 right-5 w-8 h-8 rounded-full bg-slate-800/80 hover:bg-amber-500/20 text-slate-300 hover:text-amber-400 border border-slate-700 flex items-center justify-center transition active:scale-95" 
+        aria-label="Close dialog"
+      >
+        <i class="fa-solid fa-xmark text-sm"></i>
+      </button>
+
+      <!-- Dynamic Header & Body -->
+      <div id="modal-body-container">
+        <!-- Content will be injected via JavaScript -->
+      </div>
+
+      <!-- Modal Bottom Actions -->
+      <div class="mt-6 pt-4 border-t border-slate-800 flex items-center justify-between">
+        <a 
+          href="https://t.me/+IAJGP1Y3EUsxODM9" 
+          target="_blank" 
+          rel="noopener noreferrer"
+          class="text-xs font-bold text-amber-400 hover:underline flex items-center"
+        >
+          <i class="fa-brands fa-telegram mr-1.5"></i> Join Official Channel
+        </a>
+        <button 
+          onclick="closeModal()" 
+          class="px-5 py-2 rounded-xl bg-gradient-to-r from-amber-500 to-amber-600 text-black text-xs font-bold hover:brightness-110 transition active:scale-95 shadow-md"
+        >
+          Got It, Close
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- JAVASCRIPT: Logic, Canvas Engine, Timers, Meta Tracking -->
+  <script>
+    // 1. Current Year
+    document.getElementById('current-year').textContent = new Date().getFullYear();
+
+    // 2. Interactive Background Canvas (Candlesticks & Tech Particles)
+    const canvas = document.getElementById('ambient-canvas');
+    const ctx = canvas.getContext('2d');
+    let width, height;
+    let particles = [];
+    let candlesticks = [];
+
+    function resizeCanvas() {
+      width = canvas.width = window.innerWidth;
+      height = canvas.height = window.innerHeight;
+      initBackgroundElements();
+    }
+
+    function initBackgroundElements() {
+      particles = [];
+      candlesticks = [];
+      const particleCount = Math.floor(width / 35);
+      
+      for (let i = 0; i < particleCount; i++) {
+        particles.push({
+          x: Math.random() * width,
+          y: Math.random() * height,
+          radius: Math.random() * 1.5 + 0.5,
+          speedY: -(Math.random() * 0.4 + 0.1),
+          alpha: Math.random() * 0.4 + 0.1,
+          color: Math.random() > 0.4 ? 'rgba(229, 169, 59,' : 'rgba(0, 210, 255,'
+        });
+      }
+
+      // Generate faint background candlesticks
+      const candleColumns = Math.floor(width / 45);
+      for (let i = 0; i < candleColumns; i++) {
+        candlesticks.push({
+          x: i * 45 + 15,
+          y: Math.random() * (height - 150) + 75,
+          h: (Math.random() * 40 + 10) * (Math.random() > 0.4 ? 1 : -1),
+          wickH: Math.random() * 30 + 15,
+          isGreen: Math.random() > 0.35,
+          speed: Math.random() * 0.2 + 0.05
+        });
+      }
+    }
+
+    function drawAmbient() {
+      ctx.clearRect(0, 0, width, height);
+
+      // Draw faint candle columns
+      candlesticks.forEach(c => {
+        ctx.strokeStyle = c.isGreen ? 'rgba(16, 185, 129, 0.09)' : 'rgba(239, 68, 68, 0.07)';
+        ctx.fillStyle = c.isGreen ? 'rgba(16, 185, 129, 0.08)' : 'rgba(239, 68, 68, 0.06)';
+        
+        // Wick
+        ctx.beginPath();
+        ctx.moveTo(c.x, c.y - c.wickH);
+        ctx.lineTo(c.x, c.y + Math.abs(c.h) + c.wickH);
+        ctx.stroke();
+
+        // Candle Body
+        ctx.fillRect(c.x - 4, c.y, 8, c.h);
+        
+        // Gentle movement
+        c.y -= c.speed;
+        if (c.y < -50) c.y = height + 50;
+      });
+
+      // Draw particles
+      particles.forEach(p => {
+        ctx.beginPath();
+        ctx.arc(p.x, p.y, p.radius, 0, Math.PI * 2);
+        ctx.fillStyle = `${p.color}${p.alpha})`;
+        ctx.fill();
+
+        p.y += p.speedY;
+        if (p.y < 0) {
+          p.y = height;
+          p.x = Math.random() * width;
+        }
+      });
+
+      requestAnimationFrame(drawAmbient);
+    }
+
+    window.addEventListener('resize', resizeCanvas);
+    resizeCanvas();
+    drawAmbient();
+
+    // 3. Countdown & Live Urgency Simulation
+    let totalSeconds = 49;
+    const initialSeconds = 60;
+    const minDisplay = document.getElementById('timer-min');
+    const secDisplay = document.getElementById('timer-sec');
+    const progressFill = document.getElementById('progress-fill');
+    const spotsLeftEl = document.getElementById('spots-left');
+    const spotsClaimedEl = document.getElementById('spots-claimed');
+
+    function updateCountdown() {
+      if (totalSeconds > 0) {
+        totalSeconds--;
+      } else {
+        totalSeconds = 59; // Loop softly
+      }
+
+      const minutes = Math.floor(totalSeconds / 60);
+      const seconds = totalSeconds % 60;
+
+      minDisplay.textContent = minutes.toString().padStart(2, '0');
+      secDisplay.textContent = seconds.toString().padStart(2, '0');
+
+      const percent = Math.max(12, (totalSeconds / initialSeconds) * 100);
+      progressFill.style.width = `${percent}%`;
+
+      // Dynamically simulate decreasing spots
+      if (totalSeconds % 14 === 0) {
+        let currentSpots = parseInt(spotsLeftEl.textContent);
+        if (currentSpots > 3) {
+          const newSpots = currentSpots - 1;
+          spotsLeftEl.textContent = newSpots;
+          const stickySpots = document.getElementById('sticky-spots-left');
+          if (stickySpots) stickySpots.textContent = `${newSpots} spots`;
+          const claimed = 100 - newSpots * 2;
+          spotsClaimedEl.textContent = `${claimed}%`;
+        }
+      }
+    }
+    setInterval(updateCountdown, 1000);
+
+    // 4. Live Social Proof Toast Generator
+    const liveNames = [
+      { name: "Rahul S. from Pune", time: "2s ago" },
+      { name: "Vikram Mehta from Mumbai", time: "7s ago" },
+      { name: "Ankit from Bengaluru", time: "4s ago" },
+      { name: "Deepak Sharma from Jaipur", time: "11s ago" },
+      { name: "Siddharth from Ahmedabad", time: "3s ago" },
+      { name: "Rohit K. from Delhi NCR", time: "8s ago" }
+    ];
+
+    const toast = document.getElementById('live-toast');
+    const toastName = document.getElementById('toast-name');
+
+    function showRandomToast() {
+      const item = liveNames[Math.floor(Math.random() * liveNames.length)];
+      toastName.textContent = item.name;
+
+      // Animate In
+      toast.classList.remove('opacity-0', '-translate-y-12', 'pointer-events-none');
+      toast.classList.add('opacity-100', 'translate-y-0');
+
+      // Dismiss after 3.8s
+      setTimeout(() => {
+        toast.classList.remove('opacity-100', 'translate-y-0');
+        toast.classList.add('opacity-0', '-translate-y-12', 'pointer-events-none');
+      }, 3800);
+    }
+
+    // Schedule toasts every 9-14 seconds
+    function scheduleNextToast() {
+      const delay = Math.floor(Math.random() * 5000) + 9000;
+      setTimeout(() => {
+        showRandomToast();
+        scheduleNextToast();
+      }, delay);
+    }
+    setTimeout(scheduleNextToast, 3500);
+
+    // 5. Live Market Price Jitter Simulation
+    setInterval(() => {
+      const nifty = document.getElementById('ticker-nifty');
+      const bank = document.getElementById('ticker-banknifty');
+      if (nifty && bank) {
+        const randN = (24860 + (Math.random() * 4 - 2)).toFixed(2);
+        nifty.textContent = `${randN} (+0.94%)`;
+      }
+    }, 2800);
+
+    // 6. Modal Content Repository
+    const modalData = {
+      terms: {
+        title: "Terms & Conditions",
+        icon: "fa-file-shield",
+        color: "text-amber-400",
+        content: `
+          <div class="space-y-3.5 text-slate-300 text-xs leading-relaxed">
+            <p>Welcome to <strong class="text-white">Sudhir Sharma Trading</strong>. By subscribing to our community channels or browsing our setups, you acknowledge and agree to the following conditions:</p>
+            
+            <div class="p-3 bg-amber-500/10 rounded-xl border border-amber-500/20 text-amber-200">
+              <strong class="font-bold">Educational Purpose Only:</strong> All technical chart discussions, intraday levels, and option chain interpretations are shared exclusively for self-directed educational and learning purposes.
+            </div>
+
+            <ul class="list-disc pl-4 space-y-2 text-slate-400">
+              <li>You agree that all investment decisions are entirely your own responsibility.</li>
+              <li>Redistribution, mirroring, scraping, or commercial monetization of any content shared inside our group is strictly prohibited.</li>
+              <li>We hold zero liability for financial losses, slippage, brokerage costs, or broker system outages incurred during trading.</li>
+              <li>Community members must treat peers respectfully. Promoting scams, MLM schemes, or unauthorized third-party groups leads to permanent ban.</li>
+            </ul>
+          </div>
+        `
+      },
+      disclaimer: {
+        title: "Regulatory & SEBI Disclaimer",
+        icon: "fa-triangle-exclamation",
+        color: "text-amber-400",
+        content: `
+          <div class="space-y-3.5 text-slate-300 text-xs leading-relaxed">
+            <div class="p-3 bg-red-500/10 border-l-4 border-red-500 rounded-r-xl text-red-200 font-medium">
+              Important: Sudhir Sharma is NOT a SEBI-registered Investment Adviser (RIA) or Research Analyst (RA).
+            </div>
+
+            <p>Trading in derivatives (Futures & Options), Commodities, and Equities is speculative and involves substantial financial risk. According to SEBI studies, <strong class="text-amber-300">9 out of 10 individual traders in the Equity F&O segment incur net financial losses.</strong></p>
+
+            <p>None of the information presented constitutes investment advice, portfolio management, or a direct solicitation to buy or sell securities.</p>
+
+            <p>Always verify risk parameters with an independent, certified SEBI Registered Financial Planner prior to risking real capital.</p>
+          </div>
+        `
+      },
+      about: {
+        title: "About Sudhir Sharma",
+        icon: "fa-gem",
+        color: "text-cyan-400",
+        content: `
+          <div class="space-y-3.5 text-slate-300 text-xs leading-relaxed">
+            <p><strong class="text-white">Sudhir Sharma</strong> is a seasoned technical analyst, active F&O trader, and market mentor with a growing community of over <strong>18,036 active traders</strong> across India.</p>
+
+            <p>His mentorship focuses on pure price action, volume profile analysis, institutional order zones, and maintaining an ironclad discipline with 1:2+ risk-to-reward setups.</p>
+
+            <div class="grid grid-cols-2 gap-2.5 pt-2">
+              <div class="bg-slate-900/80 p-3 rounded-xl border border-slate-800 text-center">
+                <span class="block text-amber-300 font-display font-extrabold text-base">18,036</span>
+                <span class="text-[10px] text-slate-400">Community Members</span>
+              </div>
+              <div class="bg-slate-900/80 p-3 rounded-xl border border-slate-800 text-center">
+                <span class="block text-cyan-400 font-display font-extrabold text-base">1:2.5</span>
+                <span class="text-[10px] text-slate-400">Avg. Risk:Reward</span>
+              </div>
+            </div>
+          </div>
+        `
+      },
+      contact: {
+        title: "Official Support & Inquiries",
+        icon: "fa-headset",
+        color: "text-emerald-400",
+        content: `
+          <div class="space-y-3.5 text-slate-300 text-xs leading-relaxed">
+            <p>Need support or have inquiries? Reach out through our official channels:</p>
+
+            <div class="space-y-2.5 pt-1">
+              <a href="https://t.me/+IAJGP1Y3EUsxODM9" target="_blank" class="flex items-center p-3 rounded-xl bg-slate-900/90 border border-slate-800 hover:border-amber-400/40 text-slate-200 transition group">
+                <i class="fa-brands fa-telegram text-sky-400 text-lg mr-3 group-hover:scale-110 transition-transform"></i>
+                <div class="text-left">
+                  <span class="block font-bold text-white text-xs">Official Telegram Channel</span>
+                  <span class="text-[10px] text-slate-400">Join Sudhir Sharma Trading</span>
+                </div>
+              </a>
+
+              <div class="flex items-center p-3 rounded-xl bg-slate-900/90 border border-slate-800 text-slate-200">
+                <i class="fa-regular fa-envelope text-amber-400 text-lg mr-3"></i>
+                <div class="text-left">
+                  <span class="block font-bold text-white text-xs">Direct Support Email</span>
+                  <span class="text-[10px] text-slate-400">support@sudhirsharma.trading</span>
+                </div>
+              </div>
+            </div>
+
+            <p class="text-[10px] text-slate-500 pt-1">Typical response time: within 12-24 business hours.</p>
+          </div>
+        `
+      }
+    };
+
+    const modalBackdrop = document.getElementById('modal-backdrop');
+    const modalPanel = document.getElementById('modal-panel');
+    const modalBodyContainer = document.getElementById('modal-body-container');
+
+    function openModal(key) {
+      const data = modalData[key];
+      if (!data) return;
+
+      modalBodyContainer.innerHTML = `
+        <div class="flex items-center space-x-3 mb-4">
+          <div class="w-10 h-10 rounded-xl bg-slate-900 border border-amber-500/30 flex items-center justify-center ${data.color}">
+            <i class="fa-solid ${data.icon} text-lg"></i>
+          </div>
+          <div>
+            <h2 class="text-base font-bold text-white tracking-tight">${data.title}</h2>
+            <p class="text-[10px] text-amber-300/70 font-medium">Sudhir Sharma Official</p>
+          </div>
+        </div>
+        ${data.content}
+      `;
+
+      modalBackdrop.classList.remove('opacity-0', 'pointer-events-none');
+      modalBackdrop.classList.add('opacity-100', 'pointer-events-auto');
+      
+      modalPanel.classList.remove('translate-y-full', 'sm:translate-y-4');
+      modalPanel.classList.add('translate-y-0');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeModal() {
+      modalBackdrop.classList.remove('opacity-100', 'pointer-events-auto');
+      modalBackdrop.classList.add('opacity-0', 'pointer-events-none');
+
+      modalPanel.classList.remove('translate-y-0');
+      modalPanel.classList.add('translate-y-full', 'sm:translate-y-4');
+      document.body.style.overflow = '';
+    }
+
+    modalBackdrop.addEventListener('click', (e) => {
+      if (e.target === modalBackdrop) closeModal();
+    });
+
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') closeModal();
+    });
+
+    // 7. CTA Button Meta Pixel Click Tracker
+    function handleCtaClick(e) {
+      try {
+        if (typeof fbq === 'function') {
+          fbq('track', 'Lead', {
+            content_name: 'Telegram Channel Join',
+            currency: 'INR',
+            value: 0.00
+          });
+        }
+      } catch (err) {
+        console.warn('Pixel tracking error', err);
+      }
+    }
+  </script>
+
 </body>
 </html>
